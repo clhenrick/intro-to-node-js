@@ -84,9 +84,24 @@ Questions / Homework:
 - Explain the concept of "streaming" data: grabbing chunks until we have the whole thing. Then we do stuff with the data.
 
 ### Exercise 9: Juggling Async
-- given three server requests that will take different amounts of time to complete, print the results of each request in the same order the urls are passed to you, without a 3rd party module.
+- Task: Given three server requests that will take different amounts of time to complete, print the results of each request in the same order the urls are passed to you, without a 3rd party module.
 - I used an object to keep track of the data's order, but an indexed array (used in the actual answer) is more elegant / simple.
 
 Questions For Students:
 - How do we track Asynchronous tasks?
 - And then print their results in the same order that we asked for them?
+
+### Exercise 10: Time Server
+- Task:  
+
+	  Your server should listen to TCP connections on the port provided by the first argument to your program. For each connection you must write the current date & time in the format:
+
+    	"YYYY-MM-DD hh:mm"
+
+	  followed by a newline character. Month, day, hour and minute must be zero-filled to 2 integers. For example:
+
+    	"2013-07-06 07:42"
+
+- Covers creating a Node TCP server.
+- Covers the Date object in Javascript.
+- Have the option of using the [strftime module](https://github.com/samsonjs/strftime) to simplify working with dates.
