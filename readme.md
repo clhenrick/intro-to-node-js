@@ -36,7 +36,7 @@ Notes on Node School's [Learn You Node command line tutorial](https://github.com
   - error handling
   - doing your next task only after the first task is completed and all has gone well. 
 
-### Exercise 5: 
+### Exercise 5: Filtering a List
 - reading files in a directory
 - filtering files by an extension
 - concatenating strings, eg: `‘.’ + argv.process[3];`
