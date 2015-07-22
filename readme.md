@@ -92,7 +92,7 @@ Questions For Students:
 - And then print their results in the same order that we asked for them?
 
 ### Exercise 10: Time Server
-- Task:  
+Task:  
 
 	  Your server should listen to TCP connections on the port provided by the first argument to your program. For each connection you must write the current date & time in the format:
 
