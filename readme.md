@@ -1,9 +1,9 @@
 # Learn You Node notes
-Notes on Node School's [Learn You Node command line tutorial](https://github.com/workshopper/learnyounode).
+Notes on Node School's [Learn You Node command line tutorial](https://github.com/workshopper/learnyounode) for teaching a summer workshop to the incoming Parsons School of Design M.S. Data-Viz class.
 
 ## General Thoughts:
-- this will likely also serve as a javascript review to students new to coding so things will need to be taken slowly and explained carefully
-- cover how to run node on the command line and mess around, similar to how one would with developer tools in a browser.
+- This tutorial will likely also serve as a javascript review to students new to coding so things will need to be taken slowly and explained carefully.
+- Cover how to run node interactively on the command line and mess around, similar to how one would with the javascript console in developer tools in a web browser.
 
 ## Notes on Exercises:
 ### Exercise 1: Hello World
