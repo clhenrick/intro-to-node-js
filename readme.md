@@ -83,5 +83,5 @@ Questions / Homework:
 - cover installing 3rd party modules using `npm`
 - Explain the concept of "streaming" data: grabbing chunks until we have the whole thing. Then we do stuff with the data.
 
-### Exercise 9:
-...
+### Exercise 9: Juggling Async
+- given three server requests that will take different amounts of time to complete, print the results of each request in the same order the urls are passed to you, without a 3rd party module.
