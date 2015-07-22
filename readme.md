@@ -85,3 +85,8 @@ Questions / Homework:
 
 ### Exercise 9: Juggling Async
 - given three server requests that will take different amounts of time to complete, print the results of each request in the same order the urls are passed to you, without a 3rd party module.
+- I used an object to keep track of the data's order, but an indexed array (used in the actual answer) is more elegant / simple.
+
+Questions For Students:
+- How do we track Asynchronous tasks?
+- And then print their results in the same order that we asked for them?
