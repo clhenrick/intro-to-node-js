@@ -105,3 +105,11 @@ Task:
 - Covers creating a Node TCP server.
 - Covers the Date object in Javascript.
 - Have the option of using the [strftime module](https://github.com/samsonjs/strftime) to simplify working with dates.
+- actual answer demonstrates how to "zero fill" numeric strings:
+
+```
+function zeroFill(i) {
+  return (i < 10 ? '0' : '') + i
+}
+```
+
