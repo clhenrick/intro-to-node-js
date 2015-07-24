@@ -4,6 +4,7 @@ Notes on Node School's [Learn You Node command line tutorial](https://github.com
 ## General Thoughts:
 - This tutorial will likely also serve as a javascript review to students new to coding so things will need to be taken slowly and explained carefully.
 - Cover how to run node interactively on the command line and mess around, similar to how one would with the javascript console in developer tools in a web browser.
+- Explain best practices for where to look when Googling things. eg: "mdn regular expressions"
 
 ## Notes on Exercises:
 ### Exercise 1: Hello World
@@ -112,4 +113,43 @@ function zeroFill(i) {
   return (i < 10 ? '0' : '') + i
 }
 ```
+
+### Exercise 11: HTTP File Server
+- create an http server
+- open a connection to a port
+- stream a file's contents to the client
+- uses streaming with reading file and sending data to client 
+- uses the `.pipe()` method to send the file contents to the response
+
+### Exercise 12: HTTP Uppercaser
+Objective:  
+- create an http server that only accepts 'POST' requests
+- pipe the output of the request to the response as an uppercase string
+
+Students will learn:  
+- the concept of mapping. Mention `Array.map()` in JS and show an example. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) has good documentation.
+- re-iterating the concept of piping input and output
+- filtering for request types and providing an 
+
+### Exercise 13: HTTP JSON Server
+Objective:  
+- create an HTTP server that serves JSON data to the client based on the requested URL
+
+Students will learn: 
+- How do we deal with date-time data in JS? 
+- What is JSON & how to we work with it?
+  - eg: creating it, parsing it, stringifying it
+- What is routing?
+- How do we parse a URL string in Node (via the url core-module)?
+- What is a query string?
+
+Tips & Tricks:
+- search for "url" in the response object using grep:  
+  `learnyounode run ex13.js | grep --line-buffered "url"`
+- using regular expressions in JS to search strings. [MDN documentation on RE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+
+
+
+
 
