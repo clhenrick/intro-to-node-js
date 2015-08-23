@@ -1,4 +1,6 @@
 // ex10.js
+// create a TCP time server and write the date-time in the format:  "YYYY-MM-DD hh:mm"
+
 var net = require('net');
 var strftime = require('strftime');
 var port = process.argv[2];

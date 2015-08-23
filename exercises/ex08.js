@@ -1,4 +1,7 @@
 // ex08.js
+// like exercise 7 but collect all data before writing to stdout
+// write two lines, the first is the number of characters, the second the collected data
+
 var http = require('http');
 var url = process.argv[2];
 var dataStore = [];

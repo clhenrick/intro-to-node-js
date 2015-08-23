@@ -1,10 +1,13 @@
 // ex09.js
+// collect the content of three urls
+// once the content for each get request has been received, write the content of each to stdout in the same order
+
 var http = require('http');
 var urls = [ process.argv[2], process.argv[3], process.argv[4] ];
 var count = 0;
-allTheData = {}; // store each url's data in an object
+allTheData = []; // store each url's data in an array
 
-urls.forEach(function(url) {
+urls.forEach(function(url, index) {
   var dataStore = [];  
   
   http.get(url, function(res) {    
@@ -16,11 +19,11 @@ urls.forEach(function(url) {
     res.on('end', function() {
       var fin = dataStore.join('');      
       count += 1;
-      allTheData[url] = fin;
+      allTheData[index] = fin;
     
       if (count === 3) {
         for (var i = 0; i < urls.length; i ++) {
-          console.log(allTheData[urls[i]]);
+          console.log(allTheData[i]);
         }
       }
 

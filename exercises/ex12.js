@@ -1,4 +1,6 @@
 // ex12.js
+// create a server that accepts POST requests and returns the data to the client as an uppder case string
+
 var http = require('http');
 var map = require('through2-map'); // requires doing npm install through2-map
 var port = Number(process.argv[2]);
@@ -8,7 +10,7 @@ var server = http.createServer(function(req, res) {
   if (req.method != 'POST')
     return res.end();
 
-  // other wise pipe the request to the through2-map module
+  // otherwise pipe the request to the through2-map module
   req.pipe(map(function(chunk){
     
     // and return each chunk as an upper case text

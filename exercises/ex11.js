@@ -1,4 +1,5 @@
 // ex11.js
+// create an http server that on success sends the contents of a file to the client
 
 var http = require('http');
 var fs = require('fs');

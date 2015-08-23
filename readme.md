@@ -75,8 +75,9 @@ Performing an HTTP GET request
   - response.on(‘data’, console.log);
 
 Questions / Homework: 
- - What’s encoding? Why is it important? What’s utf8? What are other types of encoding?
- - What are other types of HTTP requests? What would you use them for?
+ - What is `stdout`? Hint: Google "standard streams"
+ - What’s encoding? Why is it important? What’s `utf8`? What are other types of encoding?
+ - What are other types of HTTP requests? What would you use them for? hint: remember the "CRUD" acronym.
 
 ### Exercise 8: HTTP Collect
 - Learning how to "collect" all data before acting on it.
@@ -112,14 +113,22 @@ Task:
 function zeroFill(i) {
   return (i < 10 ? '0' : '') + i
 }
+
+// this method will be easier to explain to students
+function zeroFill(x) {
+  if (x < 10){
+    x = '0' + x;
+  } 
+  return x;
+}
 ```
 
 ### Exercise 11: HTTP File Server
 - create an http server
 - open a connection to a port
 - stream a file's contents to the client
-- uses streaming with reading file and sending data to client 
-- uses the `.pipe()` method to send the file contents to the response
+- uses streaming to read the file and send its data to the client 
+- use the `.pipe()` method to send the file contents to the response
 
 ### Exercise 12: HTTP Uppercaser
 Objective:  
@@ -131,17 +140,19 @@ Students will learn:
 - re-iterating the concept of piping input and output
 - filtering for request types and providing an 
 
-### Exercise 13: HTTP JSON Server
+### Exercise 13: HTTP JSON API Server
 Objective:  
 - create an HTTP server that serves JSON data to the client based on the requested URL
 
 Students will learn: 
+- What the hell is Unix time?
 - How do we deal with date-time data in JS? 
-- What is JSON & how to we work with it?
+- What is JSON data & how to we work with it?
   - eg: creating it, parsing it, stringifying it
 - What is routing?
 - How do we parse a URL string in Node (via the url core-module)?
 - What is a query string?
+- What is a regular expression and how are they useful?
 
 Tips & Tricks:
 - search for "url" in the response object using grep:  
